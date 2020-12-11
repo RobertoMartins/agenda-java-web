@@ -7,7 +7,7 @@ public class DAO {
 	
 	/*MODULO DE CONEXAO*/
 	
-	//PARAMETROS DE CONEXAO
+	//PARAMETROS DE CONEXÃO
 	private String driver= "com.mysql.cj.jdbc.Driver";
 	private String url="jdbc:mysql://127.0.0.1:3306/dbagenda?useTimezone=true&serverTimezone=UTC";
 	private String user="root";
