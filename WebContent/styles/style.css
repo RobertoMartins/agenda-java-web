@@ -11,8 +11,14 @@ body{
 .container{
 	width:500px;
 	margin:0 auto;
+	border: 1px solid #0077bf;
+	padding:10px;
+	border-radius:3%;
 }
 
+.img-home{
+	width:80%;
+}
 
 h1{
 	color: #0077bf;
@@ -28,6 +34,7 @@ h1{
 	border-radius:5%;
 	border: 0;
 	cursor:pointer;
+	
 	
 }
 
