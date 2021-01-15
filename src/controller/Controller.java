@@ -47,10 +47,16 @@ public class Controller extends HttpServlet {
 	// novo contato
 	protected void novoContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+		//setar variaveis JavaBeans
 		contato.setNome(request.getParameter("nome"));
 		contato.setFone(request.getParameter("fone"));
 		contato.setEmail(request.getParameter("email"));
+		
+		//invocar o metodo inserirContato
+		dao.inserirContato(contato);
+		
+		//Redirecionar para o documento agenda.jsp
+		response.sendRedirect("main");
 		
 	}
 

@@ -1,6 +1,5 @@
 /**
- * Validação de formulario
-	@author Roberto Martins
+ * 
  */
 
 function validar() {
@@ -16,6 +15,6 @@ function validar() {
 		frmContato.fone.focus()
 		return false
 	} else {
-		document.forms[frmContato].submit()
+		document.getElementById("form").submit()
 	}
 }
