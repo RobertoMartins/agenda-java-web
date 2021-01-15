@@ -8,6 +8,11 @@ body{
 	font-weight:400;	
 }
 
+.container{
+	width:500px;
+	margin:0 auto;
+}
+
 
 h1{
 	color: #0077bf;
