@@ -3,30 +3,53 @@
 @import url('https://fonts.googleapis.com/css2? family = Poppins: wght @ 400; 700 & display = swap');
 
 body{
+	height:100vh;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
 	font-weight:400;	
+	background-color: #CADBFF;
 }
 
 .container{
-	width:500px;
+	width:80%;
 	margin:0 auto;
-	border: 1px solid #0077bf;
-	padding:10px;
-	border-radius:3%;
+}
+.content{
+	margin:0 auto;
+	width:90%;
+}
+
+.content-home{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.box1{
+	width:50%;
+	display:block;
+}
+.box2{
+	width:50%;
+	display:block;
 }
 
 .img-home{
-	width:80%;
+	width:100%;
 }
 
 h1{
-	color: #0077bf;
+	color: #407BFF;
+}
+h3{
+	color: #77A1FF;
+	font-weight:200;
 }
 
 .btn1{
 	text-decoration:none;
-	background-color: #0077bf;
+	background-color: #407BFF;
 	padding: 5px 10px 5px 10px;
 	color:#ffffff;
 	font-size:1.2em;
@@ -42,7 +65,7 @@ h1{
 	width:320px;
 	padding: 5px;
 	margin-bottom:10px;
-	border:1px solid #0077bf;
+	border:1px solid #407BFF;
 	border-radius:5px;
 }
 .Caixa2{

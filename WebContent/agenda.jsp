@@ -10,8 +10,10 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Agenda de Contatos</h1>
-		<a href="novo.html" class="btn1">Novo contato</a>
+		<div class="content">
+			<h1>Agenda de Contatos</h1>
+			<a href="novo.html" class="btn1">Novo contato</a>
+		</div>
 	</div>
 </body>
 </html>
