@@ -74,3 +74,24 @@ h3{
 	border:1px solid #0077bf;
 	border-radius:5px;
 }
+
+#tabela{
+	
+	border-collapse:collapse;
+	margin:30px auto;
+}
+
+
+#tabela th{
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left;
+	background-color:#407BFF;
+	color: #fff;
+}
+
+#tabela td{
+	border: 1px solid #ddd;
+	padding: 10px;
+	background-color:#fff;
+}
