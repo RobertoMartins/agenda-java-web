@@ -78,6 +78,6 @@ public class Controller extends HttpServlet {
 		String idcon = request.getParameter("idcon");
 		contato.setIdcon(idcon);
 		
-		dao.selecionarContato(contato);
+		dao.selecionarContato(contato); 
 	}
 }
