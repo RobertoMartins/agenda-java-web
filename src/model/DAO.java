@@ -88,4 +88,27 @@ public class DAO {
 
 	}
 
+	/* CRUDE UPDATE */
+
+	// selecionar contato
+	public void selecionarContato(JavaBeans contato) {
+		String query = " select * from contatos where idon=?";
+		try {
+			Connection con = conectar();
+			PreparedStatement pst = con.prepareStatement(query);
+			pst.setString(1, contato.getIdcon());
+			ResultSet rs = pst.executeQuery();
+			while(rs.next()) {
+				contato.setIdcon(rs.getString(1));
+				contato.setNome(rs.getString(2));
+				contato.setFone(rs.getString(3));
+				contato.setEmail(rs.getString(4));
+			}
+
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
 }

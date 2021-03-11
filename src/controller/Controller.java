@@ -77,5 +77,7 @@ public class Controller extends HttpServlet {
 			throws ServletException, IOException {
 		String idcon = request.getParameter("idcon");
 		contato.setIdcon(idcon);
+		
+		dao.selecionarContato(contato);
 	}
 }
