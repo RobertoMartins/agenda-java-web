@@ -92,7 +92,7 @@ public class DAO {
 
 	// selecionar contato
 	public void selecionarContato(JavaBeans contato) {
-		String query = " select * from contatos where idon=?";
+		String query = " select * from contatos where idcon=?";
 		try {
 			Connection con = conectar();
 			PreparedStatement pst = con.prepareStatement(query);

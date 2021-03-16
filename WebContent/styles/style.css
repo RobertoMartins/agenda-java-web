@@ -61,18 +61,24 @@ h3{
 	
 }
 
-.Caixa1{
+.caixa1{
 	width:320px;
 	padding: 5px;
 	margin-bottom:10px;
 	border:1px solid #407BFF;
 	border-radius:5px;
 }
-.Caixa2{
+.caixa2{
 	padding: 5px;
 	margin-bottom:10px;
 	border:1px solid #0077bf;
 	border-radius:5px;
+}
+#caixa3{
+	padding: 5px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border:1px solid #ff0000;
 }
 
 #tabela{

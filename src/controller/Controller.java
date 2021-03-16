@@ -79,5 +79,13 @@ public class Controller extends HttpServlet {
 		contato.setIdcon(idcon);
 		
 		dao.selecionarContato(contato); 
+		
+		request.setAttribute("idcon", contato.getIdcon());
+		request.setAttribute("nome", contato.getNome());
+		request.setAttribute("fone", contato.getFone());
+		request.setAttribute("email", contato.getEmail());
+		
+		RequestDispatcher rd = request.getRequestDispatcher("editar.jsp");
+		rd.forward(request, response);
 	}
 }
