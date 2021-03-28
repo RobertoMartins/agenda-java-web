@@ -13,7 +13,7 @@
 <body>
 	<div class="container">
 		<h1>Editar contato</h1>
-		<form name="frmContato" action="" id="form">
+		<form name="frmContato" action="update" id="form">
 			<table>
 				<tr>
 					<td><input type="text" name="idcon" id="caixa3" readonly value="<%out.print(request.getAttribute("idcon"));%>"></td>

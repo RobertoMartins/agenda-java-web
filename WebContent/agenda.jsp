@@ -3,6 +3,7 @@
 <%@ page import="model.JavaBeans"%>
 <%@ page import="java.util.ArrayList"%>
 
+
 <%
 	ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
 %>

@@ -110,5 +110,23 @@ public class DAO {
 			System.out.println(e);
 		}
 	}
+	
+	public void alterarContato(JavaBeans contato) {
+		String update = "update contatos set nome=?, fone=?, email=? where idcon=?";
+		try {
+			Connection con = conectar();
+			PreparedStatement pst = con.prepareStatement(update);
+			pst.setString(1, contato.getNome());
+			pst.setString(2, contato.getFone());
+			pst.setString(3, contato.getEmail());
+			pst.setString(4, contato.getIdcon());
+			
+			pst.executeUpdate();
+			con.close();
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 
 }
