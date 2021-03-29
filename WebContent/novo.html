@@ -10,27 +10,29 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Criar novo contato</h1>
-		<form name="frmContato" action="insert" id="form">
-			<table>
-				<tr>
-					<td><input type="text" name="nome" placeholder="Nome"
-						class="caixa1"></td>
-				</tr>
-				<tr>
-					<td><input type="text" name="fone" placeholder="Fone"
-						class="caixa2"></td>
-				</tr>
+		<div class="content-block card">
+			<h1>Criar novo contato</h1>
+			<form name="frmContato" action="insert" id="form">
+				<table>
+					<tr>
+						<td><input type="text" name="nome" placeholder="Nome"
+							class="caixa1"></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="fone" placeholder="Fone"
+							class="caixa2"></td>
+					</tr>
 
-				<tr>
-					<td><input type="text" name="email" placeholder="E-mail"
-						class="caixa1"></td>
-				</tr>
-			</table>
-			<input type="button" value="Adicionar" class="btn1"
-				onclick="validar()">
-		</form>
-		<script src="scripts/validar.js"></script>
+					<tr>
+						<td><input type="text" name="email" placeholder="E-mail"
+							class="caixa1"></td>
+					</tr>
+				</table>
+				<input type="button" value="Adicionar" class="btn1"
+					onclick="validar()">
+			</form>
+			<script src="scripts/validar.js"></script>
+		</div>
 	</div>
 </body>
 </html>

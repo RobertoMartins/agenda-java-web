@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="content">
+		<div class="content-block card">
 			<h1>Agenda de Contatos</h1>
 			<a href="novo.html" class="btn1">Novo contato</a>
 			<table id="tabela">
@@ -40,7 +40,8 @@
 						<td><%=lista.get(i).getNome()%></td>
 						<td><%=lista.get(i).getFone()%></td>
 						<td><%=lista.get(i).getEmail()%></td>
-						<td><a class="btn1" href="select?idcon=<%=lista.get(i).getIdcon()%>">Editar</a></td>
+						<td><a class="btn1" href="select?idcon=<%=lista.get(i).getIdcon()%>">Editar</a>
+						<a class="btn2" href="javascript: confirmar(<%=lista.get(i).getIdcon()%>)">Excluir</a></td>
 					</tr>
 
 					<%
@@ -51,5 +52,6 @@
 			</table>
 		</div>
 	</div>
+	<script src="scripts/confirmador.js"></script>
 </body>
 </html>
