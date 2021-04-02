@@ -1,6 +1,6 @@
 package model;
 
-public class JavaBeans {
+public class ContatoBean {
 	
 	private String idcon;
 	private String nome;
@@ -8,13 +8,13 @@ public class JavaBeans {
 	private String email;
 	
 	
-	public JavaBeans() {
+	public ContatoBean() {
 		super();
 		
 	}
 	
 	
-	public JavaBeans(String idcon, String nome, String fone, String email) {
+	public ContatoBean(String idcon, String nome, String fone, String email) {
 		super();
 		this.idcon = idcon;
 		this.nome = nome;

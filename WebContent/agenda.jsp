@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%@ page import="model.JavaBeans"%>
+<%@ page import="model.ContatoBean"%>
 <%@ page import="java.util.ArrayList"%>
 
 
 <%
-	ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contatos");
+	ArrayList<ContatoBean> lista = (ArrayList<ContatoBean>) request.getAttribute("contatos");
 %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -21,6 +21,7 @@
 		<div class="content-block card">
 			<h1>Agenda de Contatos</h1>
 			<a href="novo.html" class="btn1">Novo contato</a>
+			<a href="report" class="btn2">Relatório</a>
 			<table id="tabela">
 				<thead>
 					<tr>

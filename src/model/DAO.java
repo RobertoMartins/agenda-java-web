@@ -31,7 +31,7 @@ public class DAO {
 	}
 
 	/** CRUD CREATE **/
-	public void inserirContato(JavaBeans contato) {
+	public void inserirContato(ContatoBean contato) {
 		String queryCreate = "insert into contatos (nome, fone, email) values (?,?,?)";
 		try {
 			// abrir a conexao
@@ -59,9 +59,9 @@ public class DAO {
 
 	/** CRUD READ **/
 
-	public ArrayList<JavaBeans> listarContatos() {
+	public ArrayList<ContatoBean> listarContatos() {
 
-		ArrayList<JavaBeans> contatos = new ArrayList<>();
+		ArrayList<ContatoBean> contatos = new ArrayList<>();
 		String query = "select *from contatos order by nome";
 		try {
 			Connection con = conectar();
@@ -76,7 +76,7 @@ public class DAO {
 				String email = rs.getString(4);
 
 				// populando o arraylist
-				contatos.add(new JavaBeans(idcon, nome, fone, email));
+				contatos.add(new ContatoBean(idcon, nome, fone, email));
 			}
 			con.close();
 			return contatos;
@@ -91,7 +91,7 @@ public class DAO {
 	/* CRUDE UPDATE */
 
 	// selecionar contato
-	public void selecionarContato(JavaBeans contato) {
+	public void selecionarContato(ContatoBean contato) {
 		String query = " select * from contatos where idcon=?";
 		try {
 			Connection con = conectar();
@@ -111,7 +111,7 @@ public class DAO {
 		}
 	}
 	
-	public void alterarContato(JavaBeans contato) {
+	public void alterarContato(ContatoBean contato) {
 		String update = "update contatos set nome=?, fone=?, email=? where idcon=?";
 		try {
 			Connection con = conectar();
@@ -129,7 +129,7 @@ public class DAO {
 		}
 	}
 	
-	public void deletarContato(JavaBeans contato) {
+	public void deletarContato(ContatoBean contato) {
 		String delete = "delete from contatos where idcon=?";
 		try {
 			Connection con = conectar();
