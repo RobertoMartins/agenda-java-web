@@ -40,7 +40,9 @@ body {
 	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
 	border-radius: 8px;
 }
-
+.back{
+	width:50px;
+}
 .box1 {
 	width: 50%;
 	display: block;
@@ -87,16 +89,32 @@ h3 {
 	border: 0;
 	cursor: pointer;
 }
+
+.buttons {
+	width:330px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .btn-relatorio {
+	width: 120px;
 	text-decoration: none;
 	background-color: #ffff;
 	padding: 5px 10px 5px 10px;
 	color: #d51213;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	font-size: 1.2em;
 	font-weight: 700;
 	border-radius: 5%;
 	border: 1px solid #d51213;
 	cursor: pointer;
+}
+
+.btn-relatorio img {
+	width: 20px;
 }
 
 .caixa1 {

@@ -5,8 +5,8 @@
 
 
 <%
-	@ SuppressWarnings ("unchecked")
-	ArrayList<ContatoBean> lista = (ArrayList<ContatoBean>) request.getAttribute("contatos");
+	@SuppressWarnings("unchecked")
+ArrayList<ContatoBean> lista = (ArrayList<ContatoBean>) request.getAttribute("contatos");
 %>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,10 +19,15 @@
 </head>
 <body>
 	<div class="container">
+		<a href="index.html"><img class="back" src="images/voltar.png" /></a>
 		<div class="content-block card">
+
 			<h1>Agenda de Contatos</h1>
-			<a href="novo.html" class="btn-primario">Novo contato</a> <a href="report"
-				class="btn-relatorio">Relatório</a>
+			<div class="buttons">
+				<a href="novo.html" class="btn-primario">Novo contato</a> <a
+					href="report" class="btn-relatorio">Relatório <img
+					src="images/pdf.png" /></a>
+			</div>
 			<table id="tabela">
 				<thead>
 					<tr>
