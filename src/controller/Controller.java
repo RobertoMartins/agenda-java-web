@@ -33,12 +33,11 @@ public class Controller extends HttpServlet {
 			throws ServletException, IOException {
 
 		String action = request.getServletPath();
-		System.out.println(action);
 
 		if (action.equals("/main")) {
 			contatos(request, response);
 		} else if (action.equals("/insert")) {
-			novoContato(request, response);
+			adicionarContato(request, response);
 
 		} else if (action.equals("/select")) {
 			listarContato(request, response);
@@ -68,7 +67,7 @@ public class Controller extends HttpServlet {
 		rd.forward(request, response);
 	}
 
-	protected void novoContato(HttpServletRequest request, HttpServletResponse response)
+	protected void adicionarContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		contato.setNome(request.getParameter("nome"));
 		contato.setFone(request.getParameter("fone"));
@@ -80,11 +79,10 @@ public class Controller extends HttpServlet {
 
 	}
 
-	// editar contato
 	protected void listarContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String idcon = request.getParameter("idcon");
-		contato.setIdcon(idcon);
+
+		contato.setIdcon(request.getParameter("idcon"));
 
 		dao.selecionarContato(contato);
 
@@ -113,8 +111,7 @@ public class Controller extends HttpServlet {
 	protected void removerContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String idcon = request.getParameter("idcon");
-		contato.setIdcon(idcon);
+		contato.setIdcon(request.getParameter("idcon"));
 		dao.deletarContato(contato);
 
 		response.sendRedirect("main");
