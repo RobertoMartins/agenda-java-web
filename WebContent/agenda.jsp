@@ -62,5 +62,8 @@ ArrayList<ContatoBean> lista = (ArrayList<ContatoBean>) request.getAttribute("co
 		</div>
 	</div>
 	<script src="scripts/confirmador.js"></script>
+	 <footer>
+        <p>Agenda Web - Developed by <a href="https://github.com/RobertoMartins">Roberto Murilo</a></p>
+    </footer>
 </body>
 </html>

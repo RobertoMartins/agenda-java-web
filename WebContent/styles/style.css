@@ -5,7 +5,9 @@
 	;
 
 body {
-	height: 100vh;
+	margin:0;
+	padding:0;
+	max-height: 100vh;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
@@ -168,4 +170,20 @@ h3 {
 
 .img-novo img {
 	width: 90%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #407BFF;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #245AD1 ;
 }
