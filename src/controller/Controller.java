@@ -58,31 +58,24 @@ public class Controller extends HttpServlet {
 
 	}
 
-	// Listar contatos
 	protected void contatos(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// Criando um objeto que irá receber os dados JavaBeans;
 
 		ArrayList<ContatoBean> lista = dao.listarContatos();
 
-		// Encaminhar a lista ao documento agenda.jsp
 		request.setAttribute("contatos", lista);
 		RequestDispatcher rd = request.getRequestDispatcher("agenda.jsp");
 		rd.forward(request, response);
 	}
 
-	// novo contato
 	protected void novoContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// setar variaveis JavaBeans
 		contato.setNome(request.getParameter("nome"));
 		contato.setFone(request.getParameter("fone"));
 		contato.setEmail(request.getParameter("email"));
 
-		// invocar o metodo inserirContato
 		dao.inserirContato(contato);
 
-		// Redirecionar para o documento agenda.jsp
 		response.sendRedirect("main");
 
 	}
@@ -107,7 +100,6 @@ public class Controller extends HttpServlet {
 	protected void editarContato(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		// setar a variáveis JavaBeans
 		contato.setIdcon(request.getParameter("idcon"));
 		contato.setNome(request.getParameter("nome"));
 		contato.setFone(request.getParameter("fone"));
@@ -140,10 +132,9 @@ public class Controller extends HttpServlet {
 			documento.open();
 			documento.add(new Paragraph("Lista de contatos"));
 			documento.add(new Paragraph(" "));
-			// criar tabela
+
 			PdfPTable tabela = new PdfPTable(3);
 
-			// criar cabeçalho
 			PdfPCell col1 = new PdfPCell(new Paragraph("Nome"));
 			PdfPCell col2 = new PdfPCell(new Paragraph("Fone"));
 			PdfPCell col3 = new PdfPCell(new Paragraph("Email"));

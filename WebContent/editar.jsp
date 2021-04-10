@@ -13,9 +13,9 @@
 <body>
 	<div class="container">
 		<div class="content-flex card">
-			
+
 			<form name="frmContato" action="update" id="form">
-			<h1>Editar contato</h1>
+				<h1>Editar contato</h1>
 				<table>
 					<tr>
 						<td><input type="text" name="idcon" id="caixa3" readonly

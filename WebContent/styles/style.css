@@ -1,130 +1,153 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2? family = Poppins: wght @ 400; 700 & display = swap');
+@import
+	url('https://fonts.googleapis.com/css2? family = Poppins: wght @ 400; 700 & display = swap')
+	;
 
-body{
-	height:100vh;
+body {
+	height: 100vh;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
-	font-weight:400;	
+	font-weight: 400;
 	background-color: #CADBFF;
 }
 
-.container{
-	width:80%;
-	margin:0 auto;
-	margin-top:30px;
-	
-}
-.content-block{
-	padding:20px;
-	background-color:#ffff;
-	margin:0 auto;
-	min-height:80vh;
-	width:100%;
+.container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
 }
 
-.content-flex{
-	min-height:80vh;
-	background-color:#ffff;
-	width:100%;
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-	padding:20px;
-	
+.content-block {
+	padding: 20px;
+	background-color: #ffff;
+	margin: 0 auto;
+	min-height: 80vh;
+	width: 100%;
+}
+
+.content-flex {
+	min-height: 80vh;
+	background-color: #ffff;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
 }
 
 .card {
 	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
-	border-radius:8px;
+	border-radius: 8px;
 }
 
-.box1{
-	width:50%;
-	display:block;
-}
-.box2{
-	width:50%;
-	display:block;
+.box1 {
+	width: 50%;
+	display: block;
 }
 
-.img-home{
-	width:100%;
+.box2 {
+	width: 50%;
+	display: block;
 }
 
-h1{
+.img-home {
+	width: 100%;
+}
+
+h1 {
 	color: #407BFF;
 }
-h3{
+
+h3 {
 	color: #77A1FF;
-	font-weight:200;
+	font-weight: 200;
 }
 
-.btn1{
-	text-decoration:none;
+.btn-primario {
+	text-decoration: none;
 	background-color: #407BFF;
 	padding: 5px 10px 5px 10px;
-	color:#ffffff;
-	font-size:1.2em;
-	font-weight:700;
-	border-radius:5%;
+	color: #ffffff;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5%;
 	border: 0;
-	cursor:pointer;
-	
-	
+	cursor: pointer;
 }
-.btn2{
-	text-decoration:none;
+
+.btn-remover {
+	text-decoration: none;
 	background-color: #d51213;
 	padding: 5px 10px 5px 10px;
-	color:#ffffff;
-	font-size:1.2em;
-	font-weight:700;
-	border-radius:5%;
+	color: #ffffff;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5%;
 	border: 0;
-	cursor:pointer;
-	
-	
+	cursor: pointer;
+}
+.btn-relatorio {
+	text-decoration: none;
+	background-color: #ffff;
+	padding: 5px 10px 5px 10px;
+	color: #d51213;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5%;
+	border: 1px solid #d51213;
+	cursor: pointer;
 }
 
-.caixa1{
-	width:320px;
+.caixa1 {
+	width: 320px;
 	padding: 5px;
-	margin-bottom:10px;
-	border:1px solid #407BFF;
-	border-radius:5px;
+	margin-bottom: 10px;
+	border: 1px solid #407BFF;
+	border-radius: 5px;
 }
-.caixa2{
+
+.caixa2 {
 	padding: 5px;
-	margin-bottom:10px;
-	border:1px solid #0077bf;
-	border-radius:5px;
+	margin-bottom: 10px;
+	border: 1px solid #0077bf;
+	border-radius: 5px;
 }
-#caixa3{
+
+#caixa3 {
 	padding: 5px;
-	margin-bottom:10px;
-	border-radius:5px;
-	border:1px solid #ff0000;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ff0000;
 }
 
-#tabela{
-	
-	border-collapse:collapse;
-	margin:30px auto;
+#tabela {
+	border-collapse: collapse;
+	margin: 30px auto;
 }
 
-
-#tabela th{
+#tabela th {
 	border: 1px solid #ddd;
 	padding: 10px;
 	text-align: left;
-	background-color:#407BFF;
+	background-color: #407BFF;
 	color: #fff;
 }
 
-#tabela td{
+#tabela td {
 	border: 1px solid #ddd;
 	padding: 10px;
-	background-color:#fff;
+	background-color: #fff;
+}
+
+.form-content {
+	width: 50%;
+}
+
+.img-novo {
+	width: 50%;
+}
+
+.img-novo img {
+	width: 90%;
 }
