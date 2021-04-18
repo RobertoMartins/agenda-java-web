@@ -7,10 +7,19 @@ import java.util.ArrayList;
 
 import util.Conexao;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DAO.
+ */
 public class DAO {
 
 	
 
+	/**
+	 * Inserir contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void inserirContato(ContatoBean contato) {
 		String queryCreate = "insert into contatos (nome, fone, email) values (?,?,?)";
 		try {
@@ -31,6 +40,11 @@ public class DAO {
 		}
 	}
 
+	/**
+	 * Listar contatos.
+	 *
+	 * @return the array list
+	 */
 	public ArrayList<ContatoBean> listarContatos() {
 
 		ArrayList<ContatoBean> contatos = new ArrayList<>();
@@ -60,6 +74,11 @@ public class DAO {
 
 	}
 
+	/**
+	 * Selecionar contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void selecionarContato(ContatoBean contato) {
 		String query = " select * from contatos where idcon=?";
 		try {
@@ -80,6 +99,11 @@ public class DAO {
 		}
 	}
 	
+	/**
+	 * Alterar contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void alterarContato(ContatoBean contato) {
 		String update = "update contatos set nome=?, fone=?, email=? where idcon=?";
 		try {
@@ -98,6 +122,11 @@ public class DAO {
 		}
 	}
 	
+	/**
+	 * Deletar contato.
+	 *
+	 * @param contato the contato
+	 */
 	public void deletarContato(ContatoBean contato) {
 		String delete = "delete from contatos where idcon=?";
 		try {
@@ -113,3 +142,4 @@ public class DAO {
 	}
 
 }
+
