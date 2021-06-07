@@ -12,6 +12,4 @@ Projeto desenvolvido para estudo de Java na web. Consiste em uma agenda de conta
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 
 
-## :computer: ScreenShots
-
 
