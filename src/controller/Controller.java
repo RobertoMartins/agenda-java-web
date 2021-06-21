@@ -16,8 +16,8 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import model.DAO;
 import model.ContatoBean;
+import model.DAO;
 
 // TODO: Auto-generated Javadoc
 /**
